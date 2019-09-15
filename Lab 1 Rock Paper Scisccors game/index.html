@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>Scoreboard:</h2>
+    <div id="scoreboard">
+      User Wins: 0 -
+      User Loses: 0 -
+      Ties with Computer: 0
+    </div>
+    <div id="radio-group">
+      <h2>Choose from the options below:</h2>
+      <label>
+        <input type="radio" checked name="option" value="scissors" />
+        Scissors <br>
+      </label>
+      <label>
+        <input type="radio" name="option" value="paper" />
+        Paper <br>
+      </label>
+      <label>
+        <input type="radio" name="option" value="rock" />
+        Rock <br>
+      </label>
+      <button type="button" id="rps-choose">Choose Option</button>
+    </div>
+    <div>
+      <h1 id="player-choice">You choose:</h1>
+      <h1 id="computer-choice">Computer choose:</h1>
+      <h2 id="result-message"></h2>
+    </div>
+    <div>
+      <p>Do you want to replay?</p>  
+      <button onclick="replayFunction()">Yes</button>
+      <button onclick="endsGame()">No</button>
+        
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
